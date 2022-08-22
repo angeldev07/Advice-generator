@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --adivce: hsl(193, 38%, 86%);
+    --dice-advice-id: hsl(150, 100%, 66%);
+    --border-color: hsl(217, 19%, 38%);
+    --card-bg: hsl(217, 19%, 24%);
+    --bdoy-bgc: hsl(218, 23%, 16%);
+    --quote: 18px
+}
+
+body{
+    background-color: var(--bdoy-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 33.75rem;
+    text-align: center;
+}
+
+.advice-id{
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--dice-advice-id);
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.advice{
+    --quote: 1.52rem;
+    margin-bottom: 2rem;
+    color: var(--adivce);
+    font-size: var(--quote)
+}
+
+.quotes-img img{
+    width: 100%;
+}
+
+.dice{
+    background-color: var(--dice-advice-id);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    /* position */
+    position: absolute;
+    bottom: -10%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.dice:hover{
+    box-shadow: 0 0 1.5rem var(--dice-advice-id);
+}
+
+
+
